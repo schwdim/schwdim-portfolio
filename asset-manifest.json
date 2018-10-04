@@ -1,12 +1,6 @@
 {
-  "main.js": "static/js/main.97b91e9c.js",
-  "main.js.map": "static/js/main.97b91e9c.js.map",
-  "static/media/App.scss": "static/media/App.6dbcbb93.scss",
-  "static/media/Header.scss": "static/media/Header.6afb0d68.scss",
-  "static/media/Links.scss": "static/media/Links.ee2c6773.scss",
-  "static/media/Project.scss": "static/media/Project.84ef1bcf.scss",
-  "static/media/Projects.scss": "static/media/Projects.8fb3fcf8.scss",
-  "static/media/index.scss": "static/media/index.6e88fe69.scss",
+  "main.js": "static/js/main.06b8dfbb.js",
+  "main.js.map": "static/js/main.06b8dfbb.js.map",
   "static/media/logo.svg": "static/media/logo.5d5d9eef.svg",
   "static/media/square.png": "static/media/square.4a68dcb2.png"
 }
