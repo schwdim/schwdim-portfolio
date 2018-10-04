@@ -1,15 +1,19 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faEye } from '@fortawesome/free-solid-svg-icons';
 
 import '../style/Project.scss';
 
 export class Project extends React.Component {
   render() {
-    const {title, description, img, link, tags} = this.props;
-    {console.log(img)}
+    const {title, description, img, code_link, demo_link, tags} = this.props;
+    console.log(this.props);
+
+    console.log(title + ": " + code_link);
 
     return (<div className="project">
       <div className="project-image">
-        <img src={img}/>
+        <img alt={ title + "Screenshot"} src={img}/>
       </div>
       <div className="project-content">
         <h3 className="project-title">{title}</h3>
@@ -18,12 +22,43 @@ export class Project extends React.Component {
         </div>
         <ul className="project-tags">
           {
-            tags.map(tag => (
-              <li className="project–tag">{tag}</li>
+            tags.map((tag, index) => (
+              <li key={index} className="project–tag">{tag}</li>
             ))}
         </ul>
-        <div className="project-button"><a href={link}>View Code</a></div>
+        <ul className="project-buttons">
+          <Button link={demo_link} type='demo'/>
+          <Button link={code_link} type='code'/>
+      </ul>
       </div>
     </div>);
   }
+}
+
+function Button(props){
+  const {link, type} = props;
+
+  console.log(props);
+
+  if(link === undefined){
+    return null;
+  }
+
+  let icon;
+  let text;
+
+  if(type === 'code'){
+    icon = faCode;
+    text = "View code";
+  }else{
+    icon = faEye;
+    text = "Check it out";
+  }
+
+
+  return (
+      <li className="project-button">
+        <a href={link}><FontAwesomeIcon className='project-button-icon' icon={ icon } />{ text }</a>
+      </li>
+  );
 }

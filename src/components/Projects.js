@@ -3,6 +3,8 @@ import {Project} from './Project';
 import '../style/Projects.scss';
 
 import Image1 from '../images/square.png';
+import Image2 from '../images/colbonc.png';
+import Image3 from '../images/calendar.png'
 
 const projects = [
   {
@@ -12,23 +14,24 @@ const projects = [
     tags: [
       'Ionic', 'Angular', 'TypeScript', 'SASS', 'SQLite'
     ],
-    link: 'https://github.com/schwdim/tree-species-app'
+    code_link: 'https://github.com/schwdim/tree-species-app'
   }, {
-    title: 'Projet 2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit Cras situllamcorp la urna est, tempor eget sapien et, eleifend fermentum tortor. Donec suscipit lacus in blandit malesuada. Sed euismod odio id felis pellentesque, ut pharetra nunc iaculis.',
-    img: "https://i.ytimg.com/vi/QAgy9r331v0/hqdefault.jpg",
+    title: 'Colonie Boncourt',
+    description: 'Website for a summer camp not far from where I come from. The client is now able to maintain it easily thanks to the WordPress Divi plugin.',
+    img: Image2,
     tags: [
-      'Tag 1', 'Tag 42'
+      'WordPress', 'PHP', 'Divi'
     ],
-    link: 'https://github.com'
+    demo_link: 'https://colonieboncourt.ch/'
   }, {
-    title: 'Projet 5',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit Cras situllamcorp la urna est, tempor eget sapien et, eleifend fermentum tortor. Donec suscipit lacus in blandit malesuada. Sed euismod odio id felis pellentesque, ut pharetra nunc iaculis.',
-    img: "http://www.zarias.com/wp-content/uploads/2016/02/36010216-funny-cat-pictures.jpg",
+    title: '(Google) Availability Calendar',
+    description: 'A simple HTML calendar that is synchronized with a Google Calendar. It uses the Google Calendar API to check the days where there is an event and display them differently. You can see it in use on the "Colonie Boncourt" website.',
+    img: Image3,
     tags: [
-      'Tag 2', 'Tag 8'
+      'jQuery', 'Moment.js', 'Google API'
     ],
-    link: 'https://github.com'
+    code_link: 'https://github.com/schwdim/html-google-availability-calendar',
+    demo_link: 'https://colonieboncourt.ch/#sct-dispo'
   }
 ]
 
@@ -41,8 +44,9 @@ export class Projects extends React.Component {
           <Project
             title={project.title}
             description={project.description}
-            tags={project.tags} link={project.link}
+            tags={project.tags} code_link={project.code_link}
             img={project.img} key={project.title}
+            demo_link={project.demo_link}
           />
         ))}
     </div>);
