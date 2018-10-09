@@ -1,4 +1,5 @@
 @import "variables";
+@import "responsive";
 
 .App {
   max-width: 1200px;
@@ -7,6 +8,10 @@
   text-align: left;
   font-family: $textFont;
   color: $textColor;
+
+  @include phone {
+    padding: 0 25px;
+  }
 
   h1, h2 {
     font-family: $titleFont;

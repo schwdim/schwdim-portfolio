@@ -45,4 +45,8 @@
     float: left;
     background: $primaryColor;
   }
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
 }

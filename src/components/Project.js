@@ -17,16 +17,16 @@ export class Project extends React.Component {
         <div className="project-description">
           {description}
         </div>
-        <ul className="project-tags">
+        <div className="project-tags">
           {
             tags.map((tag, index) => (
-              <li key={index} className="project–tag">{tag}</li>
+              <div key={index} className="project–tag">{tag}</div>
             ))}
-        </ul>
-        <ul className="project-buttons">
+        </div>
+        <div className="project-buttons">
           <Button link={demo_link} type='demo'/>
           <Button link={code_link} type='code'/>
-      </ul>
+      </div>
       </div>
     </div>);
   }
@@ -51,8 +51,8 @@ function Button(props){
   }
 
   return (
-      <li className="project-button">
+      <div className="project-button">
         <a target="_blank" rel="noopener noreferrer" href={link}><FontAwesomeIcon className='project-button-icon' icon={ icon } />{ text }</a>
-      </li>
+      </div>
   );
 }

@@ -17,6 +17,12 @@
       font-size: 5em;
     }
 
+    @include phone {
+      font-size: 4em;
+      line-height: 1.2em;
+      margin-bottom: 20px;
+    }
+
   }
 
   .my-description {

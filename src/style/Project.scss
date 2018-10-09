@@ -29,13 +29,17 @@
   }
 
   .project-content {
-      padding: 55px 50px;
+      padding: 51px 50px;
       width: 50%;
       z-index: 2;
       background-color: white;
 
       @include tablet {
         width: auto;
+      }
+
+      @include phone {
+        padding: 31px 30px;
       }
 
       .project-title {
@@ -45,28 +49,39 @@
       }
 
       .project-description {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
       }
 
       .project-tags {
         padding:0;
         color: $primaryColor;
-        margin-bottom: 50px;
+        margin-bottom: 6px;
+        display: inline-flex;
+        flex-wrap: wrap;
 
-        li {
-          display: inline;
+        .project–tag {
+          width: auto;
+          margin-top: 20px;
           margin-right: 20px;
           border-radius: 3px;
           padding: 5px 10px;
           border: 1px solid $primaryColor;
+
+          @include phone {
+            margin-right: 10px;
+          }
         }
       }
 
       .project-buttons{
         padding: 0px;
         margin-bottom:10px;
-        li {
-          display: inline;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .project-button {
+          width: auto;
           margin-right: 20px;
         }
       }
