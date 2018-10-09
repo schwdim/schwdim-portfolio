@@ -1,7 +1,7 @@
 export default [
   {
     name: 'HTML',
-    percentage: '90'
+    percentage: '95'
   },
   {
     name: 'CSS',
