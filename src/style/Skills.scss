@@ -1,0 +1,48 @@
+@import "variables";
+@import "responsive";
+
+.skills {
+  overflow: auto;
+  margin-bottom: 7%;
+
+  .skillRow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-right: 0;
+    float: left;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .progressBar {
+    margin-right: 50px;
+    width: 100%;
+
+    h4 {
+      margin-bottom: 5px;
+      font-style: italic;
+    }
+
+    @include tablet {
+      margin-right: 0px;
+    }
+  }
+
+  .progressBarContainer {
+    width: 100%;
+    height: 13px;
+    background: #dbdbdb;
+    overflow: hidden;
+    border-radius: 0.8em;
+  }
+
+  .progressBarValue {
+    height: 15px;
+    float: left;
+    background: $primaryColor;
+  }
+}

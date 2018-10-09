@@ -7,9 +7,6 @@ import '../style/Project.scss';
 export class Project extends React.Component {
   render() {
     const {title, description, img, code_link, demo_link, tags} = this.props;
-    console.log(this.props);
-
-    console.log(title + ": " + code_link);
 
     return (<div className="project">
       <div className="project-image">
@@ -38,8 +35,6 @@ export class Project extends React.Component {
 function Button(props){
   const {link, type} = props;
 
-  console.log(props);
-
   if(link === undefined){
     return null;
   }
@@ -55,10 +50,9 @@ function Button(props){
     text = "Check it out";
   }
 
-
   return (
       <li className="project-button">
-        <a href={link}><FontAwesomeIcon className='project-button-icon' icon={ icon } />{ text }</a>
+        <a target="_blank" rel="noopener noreferrer" href={link}><FontAwesomeIcon className='project-button-icon' icon={ icon } />{ text }</a>
       </li>
   );
 }

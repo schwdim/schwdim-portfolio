@@ -2,14 +2,14 @@ import React from 'react';
 import {Project} from './Project';
 import '../style/Projects.scss';
 
-import Image1 from '../images/square.png';
+import Image1 from '../images/treeapp.png';
 import Image2 from '../images/colbonc.png';
 import Image3 from '../images/calendar.png'
 
 const projects = [
   {
     title: 'Tree Species',
-    description: 'Cross-platform mobile application for the mapping of tree species I made for the city where I studied. It display a list and a map of the different species of trees. The app gets its data from and API and store it localy so it can be used while being offline.',
+    description: 'Cross-platform mobile application for the mapping of tree species made for the city where I studied. Displays a list and a map of the different trees. The app gets its data from and API and store it localy so it can be used while being offline.',
     img: Image1,
     tags: [
       'Ionic', 'Angular', 'TypeScript', 'SASS', 'SQLite'
@@ -37,7 +37,7 @@ const projects = [
 
 export class Projects extends React.Component {
   render() {
-    return (<div className="projects">
+    return (<div id="projects" className="projects">
       <h2>Projects I worked on:</h2>
       {
         projects.map(project => (

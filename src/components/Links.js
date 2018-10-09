@@ -10,10 +10,10 @@ export class Links extends React.Component {
   render(){
     return (
       <ul className="social-list">
-        <li><a href="https://github.com/schwdim"><FontAwesomeIcon icon={ faGithub } size="2x" color="#FE5F55"/></a></li>
-        <li><a href="https://www.linkedin.com/in/schwdim/"><FontAwesomeIcon icon={ faLinkedinIn } size="2x" color="#FE5F55"/></a></li>
-        <li><a href="mailto:dimitri.schw@gmail.com"><FontAwesomeIcon icon={ faEnvelope} size="2x" color="#FE5F55"/></a></li>
-        <li><a href="https://open.spotify.com/artist/0XLOIx5VKJkVXZ6HvhBFJX"><FontAwesomeIcon icon={ faSpotify } size="2x" color="#FE5F55"/></a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/schwdim"><FontAwesomeIcon icon={ faGithub } size="2x" color="#FE5F55"/></a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/schwdim/"><FontAwesomeIcon icon={ faLinkedinIn } size="2x" color="#FE5F55"/></a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="mailto:dimitri.schw@gmail.com"><FontAwesomeIcon icon={ faEnvelope} size="2x" color="#FE5F55"/></a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/artist/0XLOIx5VKJkVXZ6HvhBFJX"><FontAwesomeIcon icon={ faSpotify } size="2x" color="#FE5F55"/></a></li>
       </ul>
     );
   }
