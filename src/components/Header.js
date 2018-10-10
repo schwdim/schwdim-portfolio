@@ -15,7 +15,7 @@ export class Header extends React.Component {
     return (
       <div className="header-container">
         <h1 className="my-name">Dimitri <span className="last-name">Schweizer</span></h1>
-        <Links />
+        <Links size="2x" />
         <div className="my-description">
           <p>Hello, I am a web and mobile developer. I love making apps and websites using modern technologies.</p>
           <p>Besides I like music, design and photography.</p>
